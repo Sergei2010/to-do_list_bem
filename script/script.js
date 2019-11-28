@@ -1,14 +1,14 @@
 $(function () {
 
-    $('.hide').on('click', function () {
-            $(this).parent('.to_do_open').css('display', 'none');
-            $(this).parent('.to_do_close').css('display', 'none');
-            if(($('.hide').is(':visible'))) {
+    $('.list__item_hide').on('click', function () {
+            $(this).parent('.list__item-open').css('display', 'none');
+            $(this).parent('.list__item-close').css('display', 'none');
+            if(($('.list__item_hide').is(':visible'))) {
             console.clear();
             console.log('Ещё есть видимые элементы!');
             }
             else if(($(this).is(':hidden'))) {
-                    $('#to_do_list').append($('<article class="list_is_empty"><p class="text_to_do">' +
+                    $('.list').append($('<article class="list__item-empty"><p class="list__item_text">' +
                     'Список' + ' пуст' + ' ...</p></article>')).css('display', 'block');
             console.clear();
             console.log('Теперь нет видимых элементов!');
