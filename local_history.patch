@@ -1,0 +1,76 @@
+Index: index.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- index.html	(date 1574969118356)
++++ index.html	(date 1574969118356)
+@@ -9,36 +9,43 @@
+ </head>
+ <body>
+     <div class="fixed-container">
+-        <section id="to_do_list">
+-            <h2>Список дел:</h2>
+-            <article id="to_do_1" class="to_do_open">
+-                <h3>Купить две коровы</h3>
+-                <img src="style/img/hide_icon.png" class="hide" alt="hide">
+-                <img src="style/img/open_icon.png" class="open" alt="open">
+-                <p class="text_to_do">По цене 400 т.р. за штуку</p>
++        <section class="list">
++            <header><h2>Список дел:</h2></header>
++
++            <article class="list__item-open">
++                <header><h3>Купить две коровы</h3></header>
++                <img src="style/img/hide_icon.png" class="list__item_hide" alt="hide">
++                <img src="style/img/open_icon.png" class="list__item_open" alt="open">
++                <p class="list__item_text">По цене 400 т.р. за штуку</p>
+             </article>
+-            <article id="to_do_2" class="to_do_open">
+-                <h3>Купить лошадь</h3>
+-                <img src="style/img/hide_icon.png" class="hide" alt="hide">
+-                <img src="style/img/open_icon.png" class="open" alt="open">
+-                <p class="text_to_do">По цене 300 т.р. за штуку</p>
++
++            <article class="list__item-open">
++                <header><h3>Купить лошадь</h3></header>
++                <img src="style/img/hide_icon.png" class="list__item_hide" alt="hide">
++                <img src="style/img/open_icon.png" class="list__item_open" alt="open">
++                <p class="list__item_text">По цене  300 т.р. за штуку</p>
+             </article>
+-            <article id="to_do_3" class="to_do_open">
+-                <h3>Позвонить маме</h3>
+-                <img src="style/img/hide_icon.png" class="hide" alt="hide">
+-                <img src="style/img/open_icon.png" class="open" alt="open">
+-                <p class="text_to_do">Пригласить в кино</p>
++
++            <article class="list__item-open">
++                <header><h3>Позвонить маме</h3></header>
++                <img src="style/img/hide_icon.png" class="list__item_hide" alt="hide">
++                <img src="style/img/open_icon.png" class="list__item_open" alt="open">
++                <p class="list__item_text">Пригласить в кино</p>
+             </article>
++
+         </section>
+-        <section id="add_to_do_new">
+-            <h2>Добавить новое дело</h2>
+-            <article class="to_do_new">
+-                 <p><label for="name_field" class="text_to_do">* Название</label></p>
+-                 <textarea id="name_field" placeholder="">&nbsp;</textarea>
+-                 <p><label for="desc_field" class="text_to_do">* Описание</label></p>
+-                 <textarea id="desc_field" placeholder="">&nbsp;</textarea>
+-                 <button id="add_to_do">Добавить дело</button>
++
++        <section class="add">
++            <header><h2>Добавить новое дело</h2></header>
++
++            <article class="add__item">
++                <p class="add__item_text"><label for="name_field">* Название</label></p>
++                <textarea id="name_field" placeholder="">&nbsp;</textarea>
++                <p class="add__item_text"><label for="desc_field">* Описание</label></p>
++                <textarea id="desc_field" placeholder="">&nbsp;</textarea>
++                <button class="add__item_button">Добавить дело</button>
+             </article>
++
+         </section>
+     </div>>
+ </body>

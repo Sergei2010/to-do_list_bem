@@ -1,0 +1,143 @@
+html,
+body {
+    min-width: 1000px;
+    margin: 0;
+    padding: 0;
+    background: black;
+    font-family: Arial, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.fixed-container {
+    width: 1360px;
+    background: #ebebeb;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 65px 200px;
+}
+
+h2 {
+    font-size: 21px;
+
+}
+
+h3 {
+    font-size: 16px;
+    height: 50px;
+    text-indent: 20px;
+    margin: 0;
+    padding: 16px 0;
+}
+
+p {
+    font-size: 14px;
+    color: #8b92ac;
+}
+
+.list {
+    float: left;
+}
+
+    .list__item-close {
+        width: 470px;
+        height: 85px;
+        background: #FFFFFF;
+        position: relative;
+        border-bottom: 20px solid #ebebeb;
+    }
+
+        .list__item-close .list__item_text {
+            display: none;
+        }
+
+        .list__item-close h3, .list__item_hide {
+            float: left;
+        }
+
+        .list__item_hide img {
+            padding-top: 22px;
+        }
+
+    .list__item-open,
+    .list__item-empty {
+        width: 470px;
+        height: 137px;
+        background: #FFFFFF;
+        position: relative;
+        border-bottom: 20px solid #ebebeb;
+    }
+
+        .list__item-open h3, .list__item_hide {
+            float: left;
+        }
+
+        .list__item-open img {
+            padding-top: 22px;
+        }
+
+    .list__item_open,
+    .list__item_hide {
+        float: right;
+        padding-right: 24px;
+    }
+
+    .list__item_hide {
+        padding-left: 22px;
+    }
+
+    .list__item_text {
+        clear: both;
+        padding-top: 10px;
+        text-indent: 20px;
+        border-top: 1px solid #f3f3f3 ;
+        margin: 0;
+        z-index: 30;
+    }
+
+.add {
+    width: 470px;
+    float: left;
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+
+    .add__item {
+        padding-left: 40px;
+        padding-top: 20px;
+        padding-right: 40px;
+        background: #FFFFFF;
+    }
+
+        .add__item .add__item_text {
+            margin-bottom: 30px;
+        }
+
+        #name_field,
+        #desc_field {
+            width: 390px;
+            background: #ebebeb;
+            border: 1px solid #f7f7f7;
+        }
+
+        #name_field {
+            height: 45px;
+            margin-bottom: 30px;
+        }
+
+        #desc_field {
+            height: 230px;
+            margin-bottom: 30px;
+        }
+
+.add__item_button {
+    font-size: 16px;
+    color: #FFFFFF;
+    background: #2174fd;
+    width: 224px;
+    height: 55px;
+    margin-bottom: 30px;
+}

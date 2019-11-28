@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>To_do_list</title>
+    <link rel="stylesheet" type="text/css" href="style/styles.css">
+    <script src="script/jquery-3.4.1.min.js"></script>
+    <script src="script/script.js"></script>
+</head>
+<body>
+    <div class="fixed-container">
+        <section class="list">
+            <header><h2>Список дел:</h2></header>
+
+            <article class="list__item-open">
+                <header><h3>Купить две коровы</h3></header>
+                <img src="style/img/hide_icon.png" class="list__item_hide" alt="hide">
+                <img src="style/img/open_icon.png" class="list__item_open" alt="open">
+                <p class="list__item_text">По цене 400 т.р. за штуку</p>
+            </article>
+
+            <article class="list__item-open">
+                <header><h3>Купить лошадь</h3></header>
+                <img src="style/img/hide_icon.png" class="list__item_hide" alt="hide">
+                <img src="style/img/open_icon.png" class="list__item_open" alt="open">
+                <p class="list__item_text">По цене  300 т.р. за штуку</p>
+            </article>
+
+            <article class="list__item-open">
+                <header><h3>Позвонить маме</h3></header>
+                <img src="style/img/hide_icon.png" class="list__item_hide" alt="hide">
+                <img src="style/img/open_icon.png" class="list__item_open" alt="open">
+                <p class="list__item_text">Пригласить в кино</p>
+            </article>
+
+        </section>
+
+        <section class="add">
+            <header><h2>Добавить новое дело</h2></header>
+
+            <article class="add__item">
+                <p class="add__item_text"><label for="name_field">* Название</label></p>
+                <textarea id="name_field" placeholder="">&nbsp;</textarea>
+                <p class="add__item_text"><label for="desc_field">* Описание</label></p>
+                <textarea id="desc_field" placeholder="">&nbsp;</textarea>
+                <button class="add__item_button">Добавить дело</button>
+            </article>
+
+        </section>
+    </div>>
+</body>
+</html>
